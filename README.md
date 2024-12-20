@@ -1,4 +1,4 @@
-# Quantum_Computing_ESA
+# Quantum Audio Encoding
 
 University Quantum Computing and Entanglement ESA Project titled, Quantum Audio Encoding
 
