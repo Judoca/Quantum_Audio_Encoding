@@ -9,14 +9,14 @@ import random
 random_frequency = random.randint(200, 2000)
 
 # Create a 3-second sine wave
-sine_wave = Sine(random_frequency).to_audio_segment(duration=3000)
+sine_wave = Sine(random_frequency).to_audio_segment(duration=1000)
 
 # Export the audio as an MP3 file
 sine_wave.export("random_audio.mp3", format="mp3")
 
 print("Random audio sample saved as random_audio.mp3")
 
-
+#-----------------------------------------------------------------------------------
 
 
 # Converting mp3 to binary data
@@ -31,6 +31,10 @@ binary_values = ''.join(format(byte, '08b') for byte in binary_data)
 # Print the first 100 bits of the binary data
 print("Binary data (first 100 bits):", binary_values[:100])
 
+# Print the binary data
+# print("Binary data: ", binary_values)
+
+
 # Optionally save the binary data (as raw bytes) to another file
 with open("mp3_binary_data.bin", "wb") as binary_output:
     binary_output.write(binary_data)
@@ -39,7 +43,7 @@ print("MP3 file successfully converted to binary!")
 
 
 
-
+#-----------------------------------------------------------------------------------
 
 
 # Converting to q bits
@@ -141,3 +145,4 @@ if __name__ == "__main__":
     # Print the number of classical bits in the original data
     print(f"Number of classical bits in the original data: {len(binary_data)}")
     
+
